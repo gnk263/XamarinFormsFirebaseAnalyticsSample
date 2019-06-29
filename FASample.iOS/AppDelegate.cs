@@ -51,8 +51,6 @@ namespace FASample.iOS
 
             Analytics.LogEvent(EventNamesConstants.SelectContent, sendParams);
 
-            Analytics.SetScreenNameAndClass("main ios screen", this.ToString());
-
             return base.FinishedLaunching(app, options);
         }
     }

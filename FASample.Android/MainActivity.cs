@@ -31,8 +31,6 @@ namespace FASample.Droid
             bundle.PutString(FirebaseAnalytics.Param.ItemCategory, "Monday");
             bundle.PutString(FirebaseAnalytics.Param.ItemName, "21:54");
             analytics.LogEvent(FirebaseAnalytics.Event.SelectContent, bundle);
-
-            analytics.SetCurrentScreen(this, "top screen", null);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
