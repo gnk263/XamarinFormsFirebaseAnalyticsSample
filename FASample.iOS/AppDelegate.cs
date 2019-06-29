@@ -22,6 +22,9 @@ namespace FASample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            // https://github.com/xamarin/GoogleApisForiOSComponents/issues/158#issuecomment-483194061
+            var foo = Firebase.Core.Configuration.SharedInstance;
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
