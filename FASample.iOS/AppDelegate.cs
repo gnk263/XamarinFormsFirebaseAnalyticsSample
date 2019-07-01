@@ -22,25 +22,6 @@ namespace FASample.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-            var events = new Dictionary<string, string>
-            {
-                {
-                    ParameterNamesConstants.ItemCategory,
-                    "Friday"
-                },
-                {
-                    ParameterNamesConstants.ItemName,
-                    "17:08"
-                },
-            };
-
-            var sendParams = NSDictionary<NSString, NSObject>.FromObjectsAndKeys(
-                events.Values.ToArray(),
-                events.Keys.ToArray()
-            );
-
-            Analytics.LogEvent(EventNamesConstants.SelectContent, sendParams);
-
             return base.FinishedLaunching(app, options);
         }
     }

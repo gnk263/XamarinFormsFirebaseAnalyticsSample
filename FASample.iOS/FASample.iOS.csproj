@@ -68,6 +68,7 @@
     <ExtraLaunchArgs>--argument=-FIRDebugEnabled</ExtraLaunchArgs>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Analytics_iOS.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
