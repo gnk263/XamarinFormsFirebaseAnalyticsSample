@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace FASample
@@ -16,6 +13,20 @@ namespace FASample
         public MainPage()
         {
             InitializeComponent();
+
+            var events = new Dictionary<string, string>
+            {
+                {
+                    "item_category",
+                    "August"
+                },
+                {
+                    "item_name",
+                    "18th"
+                },
+            };
+
+            DependencyService.Get<IAnalytics>().LogEvent("select_content", events);
         }
     }
 }
