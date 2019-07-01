@@ -13,6 +13,8 @@ namespace FASample.Droid
     {
         public void LogEvent(string eventName, Dictionary<string, string> eventParams)
         {
+            if (eventName == null || eventParams == null) return;
+
             var analytics = AnalyticsSingleton.GetInstance.Analytics;
 
             var bundle = new Bundle();
