@@ -5,5 +5,6 @@ namespace FASample
     public interface IAnalytics
     {
         void LogEvent(string eventName, Dictionary<string, string> eventParams);
+        void Screen(string screenName);
     }
 }

@@ -24,5 +24,10 @@ namespace FASample.iOS
 
             Analytics.LogEvent(eventName, sendParams);
         }
+
+        public void Screen(string screenName)
+        {
+            Analytics.SetScreenNameAndClass(screenName, null);
+        }
     }
 }

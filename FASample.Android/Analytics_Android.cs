@@ -26,5 +26,15 @@ namespace FASample.Droid
 
             analytics.LogEvent(eventName, bundle);
         }
+
+        public void Screen(string screenName)
+        {
+            if (screenName == null) return;
+
+            var analytics = AnalyticsSingleton.GetInstance.Analytics;
+            var activity = AnalyticsSingleton.GetInstance.Activity;
+
+            analytics.SetCurrentScreen(activity, screenName, null);
+        }
     }
 }

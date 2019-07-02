@@ -20,6 +20,7 @@ namespace FASample.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             AnalyticsSingleton.GetInstance.Analytics = FirebaseAnalytics.GetInstance(this);
+            AnalyticsSingleton.GetInstance.Activity = this;
 
             base.OnCreate(savedInstanceState);
 

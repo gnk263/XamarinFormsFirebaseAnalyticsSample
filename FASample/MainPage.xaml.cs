@@ -27,6 +27,13 @@ namespace FASample
             };
 
             DependencyService.Get<IAnalytics>().LogEvent("select_content", events);
+
+            DependencyService.Get<IAnalytics>().Screen("aaaaa");
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAnalytics>().Screen("bbbbb");
         }
     }
 }
