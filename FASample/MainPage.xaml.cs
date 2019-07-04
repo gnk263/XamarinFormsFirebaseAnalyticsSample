@@ -13,8 +13,18 @@ namespace FASample
         public MainPage()
         {
             InitializeComponent();
+        }
 
-            var events = new Dictionary<string, string>
+        protected override void OnAppearing()
+        {
+            DependencyService.Get<IAnalytics>().Screen("This is MainPage!!!");
+
+            base.OnAppearing();
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            var events = new Dictionary<string, object>
             {
                 {
                     "item_category",
@@ -24,16 +34,13 @@ namespace FASample
                     "item_name",
                     "18th"
                 },
+                {
+                    "item_id",
+                    18
+                }
             };
 
             DependencyService.Get<IAnalytics>().LogEvent("select_content", events);
-
-            DependencyService.Get<IAnalytics>().Screen("aaaaa");
-        }
-
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-            DependencyService.Get<IAnalytics>().Screen("bbbbb");
         }
     }
 }
