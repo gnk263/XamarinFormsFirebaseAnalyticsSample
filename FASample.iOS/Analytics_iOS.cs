@@ -13,7 +13,7 @@ namespace FASample.iOS
 {
     public class Analytics_iOS : IAnalytics
     {
-        public void LogEvent(string eventName, Dictionary<string, string> eventParams)
+        public void LogEvent(string eventName, Dictionary<string, object> eventParams)
         {
             if (eventName == null || eventParams == null) return;
 

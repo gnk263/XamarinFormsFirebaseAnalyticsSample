@@ -11,7 +11,7 @@ namespace FASample.Droid
 {
     public class Analytics_Android : IAnalytics
     {
-        public void LogEvent(string eventName, Dictionary<string, string> eventParams)
+        public void LogEvent(string eventName, Dictionary<string, object> eventParams)
         {
             if (eventName == null || eventParams == null) return;
 
@@ -21,7 +21,15 @@ namespace FASample.Droid
 
             foreach (var eventParam in eventParams)
             {
-                bundle.PutString(eventParam.Key, eventParam.Value);
+                if (eventParam.Value.GetType() == typeof(string))
+                {
+                    bundle.PutString(eventParam.Key, (string)eventParam.Value);
+                }
+
+                if (eventParam.Value.GetType() == typeof(int))
+                {
+                    bundle.PutInt(eventParam.Key, (int)eventParam.Value);
+                }
             }
 
             analytics.LogEvent(eventName, bundle);
