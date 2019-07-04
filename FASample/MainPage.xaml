@@ -6,13 +6,14 @@
              mc:Ignorable="d"
              x:Class="FASample.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
+    <StackLayout VerticalOptions="Center">
         <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        
-        <Button Text="send screen" Clicked="Button_OnClicked" />
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Button Text="send screen"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="Button_OnClicked" />
     </StackLayout>
 
 </ContentPage>
