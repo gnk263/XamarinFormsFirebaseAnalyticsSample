@@ -10,7 +10,7 @@
         <Label Text="Welcome to Xamarin.Forms!" 
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
-        <Button Text="send screen"
+        <Button Text="send event"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Clicked="Button_OnClicked" />
