@@ -18,6 +18,7 @@ namespace FASample.iOS
             var foo = Firebase.Core.Configuration.SharedInstance;
 
             Firebase.Core.App.Configure();
+            Firebase.Crashlytics.Crashlytics.Configure();
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
