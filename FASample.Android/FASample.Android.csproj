@@ -52,6 +52,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Crashlytics">
+      <Version>2.9.4.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Analytics">
       <Version>60.1142.1</Version>
     </PackageReference>
