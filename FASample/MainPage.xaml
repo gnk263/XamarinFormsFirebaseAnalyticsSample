@@ -14,6 +14,10 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 Clicked="Button_OnClicked" />
+        <Button Text="crash!!"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="Button_Crash_Clicked"/>
     </StackLayout>
 
 </ContentPage>
