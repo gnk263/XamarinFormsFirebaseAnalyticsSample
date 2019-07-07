@@ -55,7 +55,28 @@
     <PackageReference Include="Xamarin.Android.Crashlytics">
       <Version>2.9.4.1</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Android.Crashlytics.Answers">
+      <Version>1.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Crashlytics.Beta">
+      <Version>1.2.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Fabric">
+      <Version>1.4.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Analytics">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Analytics.Impl">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Core">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Iid">
       <Version>60.1142.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
@@ -67,6 +88,12 @@
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
+      <Version>60.1142.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalyticsSingleton.cs" />
