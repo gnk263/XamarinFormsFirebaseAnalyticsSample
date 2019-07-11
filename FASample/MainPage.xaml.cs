@@ -42,5 +42,10 @@ namespace FASample
 
             DependencyService.Get<IAnalytics>().LogEvent("select_content", events);
         }
+
+        private void Button_Crash_Clicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException("this is crash test!!!");
+        }
     }
 }

@@ -22,6 +22,9 @@ namespace FASample.Droid
             AnalyticsSingleton.GetInstance.Analytics = FirebaseAnalytics.GetInstance(this);
             AnalyticsSingleton.GetInstance.Activity = this;
 
+            Fabric.Fabric.With(this, new Crashlytics.Crashlytics());
+            Crashlytics.Crashlytics.HandleManagedExceptions();
+
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
