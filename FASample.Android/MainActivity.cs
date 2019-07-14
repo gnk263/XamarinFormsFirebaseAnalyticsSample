@@ -8,12 +8,14 @@ using Android.Widget;
 using Android.OS;
 
 using Firebase.Analytics;
+using Com.Google.Firebase.Perf.Metrics;
 
 namespace FASample.Droid
 {
     [Activity(Label = "FASample", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        [AddTrace(Name = "OnCreateTrace", Enabled = true)]
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
