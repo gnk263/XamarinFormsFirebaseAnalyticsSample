@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 
 using Firebase.Analytics;
+using Firebase.PerformanceMonitoring;
 
 namespace FASample.iOS
 {
@@ -20,8 +21,12 @@ namespace FASample.iOS
             Firebase.Core.App.Configure();
             Firebase.Crashlytics.Crashlytics.Configure();
 
+            var trace = Performance.StartTrace("XamarinFormsInitTrace");
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            trace.Stop();
 
             return base.FinishedLaunching(app, options);
         }
