@@ -136,6 +136,9 @@
     <PackageReference Include="Xamarin.Firebase.iOS.Crashlytics">
       <Version>3.10.9</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.iOS.PerformanceMonitoring">
+      <Version>2.1.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
